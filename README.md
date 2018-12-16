@@ -56,3 +56,9 @@ You could use this github repository,  this repository have a Docker composition
 | IdProduct | ForeignKey                                    | product   |       |   |   |
 | Price     | DecimalField(max_digits=12, decimal_places=2) |           |       |   |   |
 | Qty       | IntegerField(default=0)                       |           |       |   |   |
+
+## Other project info
+
+**SuperUser** : admin
+**SuperUserEmail** : admin@admin.com
+**SuperUserPasword** : admin123
