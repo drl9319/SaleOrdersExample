@@ -82,3 +82,5 @@ The Api Rest was made with **Django REST Framework**.
 If you wont to test this REST, could be use Postman and call to "http://127.0.0.1:8000/Product/" URL, this return data like this:
 
 ScreenShot
+
+This REST api haven't security because it's only an example, but Django REST Framework allow have several security types.
