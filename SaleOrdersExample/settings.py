@@ -25,12 +25,13 @@ SECRET_KEY = '$r*geqk)!gkz95gg5y0*@6c*2!)6_8-tax6#7$*)@69%tdznw4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'SaleOrdersExample.apps.SaleOrderConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
