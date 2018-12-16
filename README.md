@@ -17,7 +17,7 @@ The application have:
  - Django rest framework
  - pip install requests
  
-You could use this github repository,  this repository have a Docker composition with all the necessary to run this project.
+You could use this github repository: https://github.com/drl9319/django2X_withDocker, this repository have a Docker composition with all the necessary to run this project.
 
 # Technical analysis
 
