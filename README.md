@@ -15,6 +15,7 @@ The application have:
  - Django 2.1
  - SQLITE DB
  - Django rest framework
+ - pip install requests
  
 You could use this github repository,  this repository have a Docker composition with all the necessary to run this project.
 
@@ -65,6 +66,10 @@ You could use this github repository,  this repository have a Docker composition
 * **SuperUserEmail** : admin@admin.com
 * **SuperUserPasword** : admin123
 
+### Enter to admin Sale orders
+
+URL: http://0.0.0.0:8000/admin/
+
 ### E-Mail send
 
 This application have a send e-mail when the client sale is saved, to configure the exit e-mail server, you must go to setings.py and this is the config data:
@@ -84,3 +89,9 @@ If you wont to test this REST, could be use Postman and call to "http://127.0.0.
 ScreenShot
 
 This REST api haven't security because it's only an example, but Django REST Framework allow have several security types.
+
+### Example to consume REST Api
+
+http://0.0.0.0:8000/SaleOrdersExample/
+
+
