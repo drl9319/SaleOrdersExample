@@ -1,0 +1,12 @@
+Product List From Api:
+<ul>
+
+  {% for key, value in products.items %}
+    <li>
+      {{ key }}
+      {% for key, value in value.items %}
+        <ul>{{ key }} : {{ value }}</ul>
+      {% endfor %}
+    </li>
+  {% endfor %}
+</ul>
