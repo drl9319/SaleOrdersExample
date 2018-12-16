@@ -90,4 +90,8 @@ ScreenShot
 
 This REST api haven't security because it's only an example, but Django REST Framework allow have several security types.
 
+### Example to consume REST Api
+
+http://0.0.0.0:8000/SaleOrdersExample/
+
 
