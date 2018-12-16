@@ -5,6 +5,7 @@ This application it's and example that how to make a simple application in Djang
 The application have:
 
  - Product management
+ - Clients
  - Client orders
  - Endpoint
 
@@ -28,3 +29,30 @@ You could use this github repository,  this repository have a Docker composition
 | Description  | CharField(max_length=1000)                    |          |       |   |   |
 | Price        | DecimalField(max_digits=12, decimal_places=2) |          |       |   |   |
 
+### Client
+
+
+| Name    | Type                                | Relation | Other |   |   |
+|---------|-------------------------------------|----------|-------|---|---|
+| Name    | CharField(max_length=200)           |          |       |   |   |
+| NIF     | CharField(max_length=50)            |          |       |   |   |
+| Country | CharField(max_length=1, choices=[]) |          |       |   |   |
+| City    | CharField(max_length=200)           |          |       |   |   |
+| Email   | CharField(max_length=200)           |          |       |   |   |
+
+### SaleOrder
+
+
+| Name     | Type                                | Relation | Other |   |   |
+|----------|-------------------------------------|----------|-------|---|---|
+| Date     | DateField                           |          |       |   |   |
+| IdClient | ForeignKey                          | Client   |       |   |   |
+
+### SaleOrderLine
+
+| Name      | Type                                          | Relation  | Other |   |   |
+|-----------|-----------------------------------------------|-----------|-------|---|---|
+| IdSale    | ForeignKey                                    | SaleOrder |       |   |   |
+| IdProduct | ForeignKey                                    | product   |       |   |   |
+| Price     | DecimalField(max_digits=12, decimal_places=2) |           |       |   |   |
+| Qty       | IntegerField(default=0)                       |           |       |   |   |
