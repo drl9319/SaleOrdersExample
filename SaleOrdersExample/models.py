@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+from django.core.mail import send_mail
 
 
 class Product(models.Model):
@@ -32,8 +33,21 @@ class SaleOrder(models.Model):
     Date = models.DateField(default=timezone.now)
     IdClient = models.ForeignKey(Client, on_delete=models.CASCADE)
 
+    '''
     def __str__(self):
         return self.Date
+    '''
+
+    def save(self, *args, **kwargs):
+        send_mail(
+            'You are new Client order to manage',
+            'Here is the message.',
+            'drodriguezahora@gmail.com',
+            ['drl.9319@gmail.com'],
+            fail_silently=False,
+        )
+        super(SaleOrder, self).save(self, *args, **kwargs)
+
 
 class SaleOrderLine(models.Model):
     IdSale = models.ForeignKey(SaleOrder, on_delete=models.CASCADE)
@@ -41,5 +55,7 @@ class SaleOrderLine(models.Model):
     Price= models.DecimalField(max_digits=12, decimal_places=2)
     Qty = models.IntegerField(default=0)
 
+    '''
     def __str__(self):
         return self.IdProduct
+    '''
