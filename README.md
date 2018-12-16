@@ -59,6 +59,19 @@ You could use this github repository,  this repository have a Docker composition
 
 ## Other project info
 
-**SuperUser** : admin
-**SuperUserEmail** : admin@admin.com
-**SuperUserPasword** : admin123
+* **SuperUser** : admin
+* **SuperUserEmail** : admin@admin.com
+* **SuperUserPasword** : admin123
+
+### E-Mail send
+
+This application have a send e-mail when the client sale is saved, to configure the exit e-mail server, you must go to setings.py and this is the config data:
+
+```python
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'your@gmail.com'
+EMAIL_HOST_PASSWORD = 'yourPasword'
+EMAIL_USE_TLS = True
+```
+
