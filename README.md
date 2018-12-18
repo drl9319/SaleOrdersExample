@@ -17,7 +17,7 @@ The application have:
  - Django rest framework
  - pip install requests
  
-You could use this github repository,  this repository have a Docker composition with all the necessary to run this project.
+You could use this github repository: https://github.com/drl9319/django2X_withDocker, this repository have a Docker composition with all the necessary to run this project.
 
 # Technical analysis
 
@@ -93,5 +93,11 @@ This REST api haven't security because it's only an example, but Django REST Fra
 ### Example to consume REST Api
 
 http://0.0.0.0:8000/SaleOrdersExample/
+
+### Load example data
+
+This app have example data to refill with data de SQLITE DB. I use the fixtures like if i wont make a test, but only for have structured data and load this if you run this command: **python manage.py loaddata SaleOrdersExample/fixtures/products.json**
+
+This data are in fixtures folder, and the format is JSON, but it's possible make this with YML for example.
 
 
