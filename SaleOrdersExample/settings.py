@@ -131,6 +131,9 @@ REST_FRAMEWORK = {
     ]
 }
 
+FIXTURE_DIRS = (
+    '//SaleOrdersExample/fixtures/',
+   )
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/

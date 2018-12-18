@@ -1,0 +1,42 @@
+[
+  {
+    "model": "SaleOrdersExample.Product",
+    "pk": 1,
+    "fields": {
+      "SerialNumber": "0001",
+      "Name": "Raton",
+      "Description": "Raton Logitech",
+      "Price": "10.00"
+    }
+  },
+  {
+    "model": "SaleOrdersExample.Product",
+    "pk": 2,
+    "fields": {
+      "SerialNumber": "0002",
+        "Name": "Portatil Fujitsu",
+        "Description": "Portatil con I7, 8 GB RAM, Disco duro SSD",
+        "Price": "800.00"
+    }
+  },
+  {
+    "model": "SaleOrdersExample.Product",
+    "pk": 3,
+    "fields": {
+        "SerialNumber": "0003",
+        "Name": "Disco duro",
+        "Description": "Disco duro SSD ultima generación",
+        "Price": "120.00"
+    }
+  },
+  {
+    "model": "SaleOrdersExample.Product",
+    "pk": 4,
+    "fields": {
+        "SerialNumber": "0004",
+        "Name": "Generic Product",
+        "Description": "Generic product",
+        "Price": "8.00"
+    }
+  }
+]
